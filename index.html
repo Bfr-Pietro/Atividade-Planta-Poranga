@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Planta</title>
+    <link rel="shortcut icon" href="assets/imgs/planta favicon.png" type="image/x-icon">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            max-width: 100vw;
+        }
+        header{
+            width: 100vw;
+            height: 17vh;
+            background-color: rgb(12, 219, 12);
+            display: flex;
+            align-items: center;
+            color: rgb(46, 44, 44);
+            font-size: 2vw;
+            padding: 20px;
+            justify-content: space-between;
+        }
+        header>img{
+            height: 13vh;
+        }
+        #headerlinks>a{
+            color: rgb(46, 44, 44);
+            font-size: 1vw
+        }
+        a{
+            text-decoration: none;
+        }
+        #footerlinks>a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+#footerlinks a:hover::after{
+    width: 50px;
+}
+#footerlinks>a{
+    position: relative;
+}
+footer>div>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#footerlinks{
+    display: flex;
+    gap: 20px;
+}
+footer{
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    gap: 20px;
+}
+    #eu{
+        width: 10vw;
+        border-radius: 20px;
+    }
+    #section2{
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #eutextos{
+        width: 30vw;
+    }
+    #eutextos>h1{
+        font-size: 2vw;
+    }
+    #eutextos>h4{
+        font-size: 1.2vw;
+    }
+    #sectionimg{
+        width: 37vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #sectiontextos{
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #sectiontextos>p{
+        font-size: 25px;
+    }
+    #section1{
+        display: flex;
+        padding: 20px;
+    }
+    #sectiontextos>h1{
+        font-size: 40px;
+    }
+    @media (max-width:700px){
+        #section1{
+            flex-direction: column;
+        }
+        #sectionimg{
+            width: 90vw;
+        }
+        #sectiontextos{
+            width: 90vw;
+            text-align: center;
+        }
+        #sectionimg>img{
+            width: 50vw;
+        }
+        header>img{
+            height: 7vh;
+        }
+        header{
+            height: 12vh;
+        }
+        header>h1{
+            font-size: 9vw;
+        }
+        #headerlinks>a{
+            display: none;
+        }
+        #section1>#sectiontextos>p{
+            font-size: 5vw;
+        }
+        #section1>#sectiontextos>h1{
+            font-size: 8vw;
+        }
+        #section2{
+            width: 100vw;
+            padding: 3vw;
+        }
+        #section2>#eu{
+            width: 30vw;
+        }
+        #section2>#eutextos>h1{
+            font-size: 7vw;
+        }
+        #section2>#eutextos>h4{
+            font-size: 4vw;
+        }
+        #section2>#eutextos{
+            width: 65vw;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img src="assets/imgs/logo etec.png" alt="Logo da Etec DPM">
+        <h1>Minha Planta</h1>
+        <div id="headerlinks">
+            <a href="#header">Home</a>
+            <a href="#sectionimg">Sobre</a>
+            <a href="#footerlinks">Contato</a>
+        </div>
+    </header>
+
+    <section id="section1">
+        <div id="sectionimg">
+            <img src="assets/imgs/amoreira.png" alt="">
+        </div>
+        <div id="sectiontextos">
+            <h1>Nome da planta: Amoreira</h1>
+            <h1>Nome científico: <i>Morus nigra</i></h1>
+            <p>Morus é um género de árvores caducifólias, que são conhecidas por amoreiras, nativas das regiões temperadas e subtropicais da Ásia, África e América do Norte, sendo que a maioria das espécies do género é asiática.
+                <br>
+                <br>
+                Trata-se de árvores de porte médio que podem atingir cerca de 4 a 5 metros de altura, possuem casca ligeiramente rugosa, escura e copa grande. As folhas têm coloração mais ou menos verde, com uma leve pilosidade que as torna ásperas.
+                <br>
+                <br>
+                As flores são de tamanho reduzido e cor branco-amarelada. As amoreiras crescem bem em todo o Brasil e Portugal e apresentam crescimento rápido, adaptando-se a qualquer tipo de solo, preferindo os úmidos e profundos. Frutifica de Setembro a Novembro no Brasil, e de Maio a Agosto em Portugal.
+                <br>
+                <br>
+                As amoras são frutos pendentes, de coloração vermelho-escura, quase preta, quando maduros, com polpa vermelho-escura comestível. A coloração de seus frutos varia de acordo com a espécie à qual pertencem e conforme o seu grau de maturação.
+            </p>
+        </div>
+    </section>
+    <section id="section2">
+        <img id="eu" src="assets/imgs/eu.jpeg" alt="">
+        <div id="eutextos">
+            <h4>Site desenvolvido por:</h4>
+            <h1>Juliano Pietro Nunes de Almeida</h1>
+        </div>
+    </section>
+    
+    <footer>
+        <h2>Copyright © Pietro Nunes</h2>
+        <div id="footerlinks">
+            <a href="https://www.instagram.com/bfr_pietro/"><img src="assets/imgs/Instagram logo.jpeg" alt=""></a>
+            <a href="https://www.facebook.com/pietro.nunes.96199344/"><img src="assets/imgs/Facebook logo.jpeg" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=5515997672075&text=Salve%20Cuz%C3%A3o!"><img src="assets/imgs/Whatsapp logo.jpeg" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
